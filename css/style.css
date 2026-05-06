@@ -1,0 +1,239 @@
+/* ============================================
+   TEMA: Esmeralda / Teal Oscuro
+   Paleta principal: #0d9488 (teal-600), #134e4a (teal-900)
+   Acento: #f59e0b (amber), textos: #ccfbf1
+   ============================================ */
+ 
+/* Variables de color */
+:root {
+    --color-primary: #0d9488;
+    --color-primary-dark: #0f766e;
+    --color-primary-deeper: #134e4a;
+    --color-accent: #f59e0b;
+    --color-accent-dark: #d97706;
+    --color-bg: #0a1a18;
+    --color-bg-card: #0f2420;
+    --color-surface: #1a3330;
+    --color-border: #1e4a45;
+    --color-text: #ccfbf1;
+    --color-text-muted: #5eead4;
+}
+ 
+/* Bordes personalizados */
+.border-dashed {
+    border-style: dashed !important;
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+ 
+/* ── Fondo y texto base ── */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+ 
+/* ── Navbar ── */
+.navbar.bg-primary {
+    background-color: var(--color-primary-deeper) !important;
+    border-bottom: 1px solid var(--color-border);
+}
+ 
+/* ── Hero / secciones oscuras ── */
+.bg-dark {
+    background-color: var(--color-bg-card) !important;
+}
+ 
+.bg-dark-subtle {
+    background-color: var(--color-surface) !important;
+}
+ 
+/* ── Fondo negro (footer) ── */
+.bg-black {
+    background-color: #030f0d !important;
+}
+ 
+/* ── Borders ── */
+.border-secondary {
+    border-color: var(--color-border) !important;
+}
+.border-secondary-subtle {
+    border-color: var(--color-border) !important;
+}
+ 
+/* ── Texto de color primario de Bootstrap → teal ── */
+.text-primary {
+    color: var(--color-primary) !important;
+}
+ 
+/* ── Botones primarios ── */
+.btn-primary {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary-dark) !important;
+    color: #fff !important;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--color-primary-dark) !important;
+    border-color: var(--color-primary-deeper) !important;
+}
+ 
+/* ── Botones outline ── */
+.btn-outline-light {
+    border-color: var(--color-text-muted) !important;
+    color: var(--color-text-muted) !important;
+}
+.btn-outline-light:hover {
+    background-color: var(--color-text-muted) !important;
+    color: var(--color-bg) !important;
+}
+ 
+/* ── Botón warning → amber ── */
+.btn-outline-warning {
+    border-color: var(--color-accent) !important;
+    color: var(--color-accent) !important;
+}
+.btn-outline-warning:hover {
+    background-color: var(--color-accent) !important;
+    color: #000 !important;
+}
+.btn-warning {
+    background-color: var(--color-accent) !important;
+    border-color: var(--color-accent-dark) !important;
+    color: #000 !important;
+}
+ 
+/* ── Card header ── */
+.card-header.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+ 
+/* ── Progress bar ── */
+.progress-bar.bg-success {
+    background-color: var(--color-primary) !important;
+}
+ 
+/* ── Badges ── */
+.badge.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+.badge.bg-info {
+    background-color: var(--color-accent) !important;
+    color: #000 !important;
+}
+ 
+/* ── Alert info ── */
+.alert-info {
+    background-color: var(--color-surface) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-text) !important;
+}
+ 
+/* ── Tabla ── */
+.table-dark {
+    --bs-table-bg: var(--color-bg-card);
+    --bs-table-hover-bg: var(--color-surface);
+    --bs-table-border-color: var(--color-border);
+}
+.table-secondary {
+    background-color: var(--color-primary-deeper) !important;
+    color: var(--color-text) !important;
+}
+.table-secondary th {
+    color: var(--color-text) !important;
+}
+ 
+/* ── Cards ── */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--color-bg-card) !important;
+    border-color: var(--color-border) !important;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(13, 148, 136, 0.25) !important;
+}
+ 
+/* ── Opacity boxes bg-primary ── */
+.bg-primary {
+    background-color: var(--color-primary) !important;
+}
+ 
+/* ── Sombras con tinte teal ── */
+.shadow-sm {
+    box-shadow: 0 1px 6px rgba(13, 148, 136, 0.3) !important;
+}
+.shadow {
+    box-shadow: 0 4px 16px rgba(13, 148, 136, 0.35) !important;
+}
+.shadow-lg {
+    box-shadow: 0 8px 32px rgba(13, 148, 136, 0.45) !important;
+}
+ 
+/* ── Formularios ── */
+.form-control {
+    background-color: var(--color-surface) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text) !important;
+}
+.form-control::placeholder {
+    color: var(--color-text-muted) !important;
+    opacity: 0.6;
+}
+.form-control:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 148, 136, 0.3) !important;
+}
+ 
+/* ── Links navbar ── */
+.nav-link {
+    color: var(--color-text-muted) !important;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--color-text) !important;
+}
+ 
+/* ── Navbar brand ── */
+.navbar-brand {
+    color: var(--color-text) !important;
+}
+ 
+/* ── bg-secondary-subtle ── */
+.bg-secondary-subtle {
+    background-color: var(--color-surface) !important;
+}
+ 
+/* ── Border de elementos con border-primary/success ── */
+.border-primary {
+    border-color: var(--color-primary) !important;
+}
+.border-success {
+    border-color: #10b981 !important;
+}
+ 
+/* ── Badge success ── */
+.badge.bg-success {
+    background-color: #059669 !important;
+}
+ 
+/* ── Código inline ── */
+code {
+    color: var(--color-accent) !important;
+    background-color: rgba(245, 158, 11, 0.1);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+ 
+/* ── List group ── */
+.list-group-item.bg-dark {
+    background-color: var(--color-bg-card) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text) !important;
+}
+ 
+/* ── Scroll suave ── */
+html {
+    scroll-behavior: smooth;
+}
